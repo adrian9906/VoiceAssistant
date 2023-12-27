@@ -1,7 +1,8 @@
-from langdetect import detect
+from googletrans import Translator
 
 def langDetect(text):
-    lang = detect(text)
+    translator = Translator()
+    lang = translator.detect(text).lang
     if (lang=='es' or lang=='en'):
         return lang
     else:
