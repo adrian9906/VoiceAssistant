@@ -1,6 +1,6 @@
 import datetime
 
-def initialGree(lang, text):
+def initialGree(lang):
     timeState =  datetime.datetime.now()
     
     if timeState.hour < 6 or timeState.hour > 20:

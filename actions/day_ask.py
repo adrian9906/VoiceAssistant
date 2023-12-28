@@ -13,7 +13,7 @@ def dayTime(lang):
     
     weekend = day.weekday()
     week = calendarLang(lang,weekend)
-    print(week)
+    return week
 
 def timeNow(lang):
     timeState =  datetime.datetime.now()
